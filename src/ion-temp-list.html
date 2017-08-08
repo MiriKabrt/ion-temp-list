@@ -1,0 +1,9 @@
+<ion-list *ngIf="items.length">
+  <ng-content></ng-content>
+  <ng-template ngFor let-item [ngForOf]="items | filter:filter | orderBy:orderBy | slice:0:limit" [ngForTemplate]="template">
+  </ng-template>
+</ion-list>
+
+<ion-infinite-scroll *ngIf="showInfinitScroll()" (ionInfinite)="doInfinite($event)">
+   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+</ion-infinite-scroll>
