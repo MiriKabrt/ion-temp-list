@@ -1,6 +1,6 @@
 {
   "name": "ion3-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ionic 3 template list with filtereing, dynamic loading dom",
   "main": "main.js",
   "scripts": {
