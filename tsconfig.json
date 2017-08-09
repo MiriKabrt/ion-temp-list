@@ -11,6 +11,7 @@
     "declaration": true
   },
   "files": [
+    "src/index.ts",
     "src/ion-temp-list.ts",
     "src/ion-temp-list.module.ts"
   ]
