@@ -1,2 +1,2 @@
-exports.IonTempList = require('./bundle/ion-temp-list').IonTempList
-exports.IonTempListModule = require('./bundle/ion-temp-list.module').IonTempListModule
+export * from './bundle/ion-temp-list'
+export * from './bundle/ion-temp-list.module'

@@ -8,7 +8,7 @@ import { Ng2SearchPipe } from 'ng2-search-filter';
  * for more info on Angular Components.
  */
 @Component({
-  selector: 'ptx-list',
+  selector: 'ion-temp-list',
   templateUrl: 'ion-temp-list.html'
 })
 export class IonTempList  implements OnChanges{
