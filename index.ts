@@ -1,2 +1,2 @@
-export * from './bundle/ion-temp-list'
-export * from './bundle/ion-temp-list.module'
+export * from './src/ion-temp-list'
+export * from './src/ion-temp-list.module'

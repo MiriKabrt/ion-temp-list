@@ -1,5 +1,5 @@
-import { Component, ContentChild, TemplateRef, Input, OnChanges } from '@angular/core';
-import { Ng2SearchPipe } from 'ng2-search-filter';
+import { Component, ContentChild, TemplateRef, Input, OnChanges } from '@angular/core'
+import { Ng2SearchPipe } from 'ng2-search-filter/dist/'
 
 /**
  * Generated class for the ListComponent component.
