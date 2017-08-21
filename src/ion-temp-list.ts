@@ -1,5 +1,5 @@
 import { Component, ContentChild, TemplateRef, Input, OnChanges } from '@angular/core'
-import { Ng2SearchPipe } from 'ng2-search-filter/dist/'
+import { Ng2SearchPipe } from 'ng2-search-filter'
 
 /**
  * Generated class for the ListComponent component.
@@ -45,7 +45,7 @@ export class IonTempList implements OnChanges {
     this.limit = 15
   }
 
-  doInfinite(infiniteScroll) {
+  doInfinite(infiniteScroll: any) {
     setTimeout(() => {
       this.limit = this.limit + 15
       infiniteScroll.complete()

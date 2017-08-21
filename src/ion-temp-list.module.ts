@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 import { IonicPageModule } from 'ionic-angular'
-import { Ng2SearchPipeModule, Ng2SearchPipe } from 'ng2-search-filter/dist/'
+import { Ng2SearchPipeModule, Ng2SearchPipe } from 'ng2-search-filter'
 import { NgPipesModule } from 'ngx-pipes'
 import { IonTempList } from './ion-temp-list'
 
@@ -9,6 +10,7 @@ import { IonTempList } from './ion-temp-list'
     IonTempList
   ],
   imports: [
+    CommonModule,
     Ng2SearchPipeModule,
     NgPipesModule,
     IonicPageModule.forChild(IonTempList)

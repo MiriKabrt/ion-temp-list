@@ -6,7 +6,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "removeComments": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "outDir": "bundle",
     "declaration": true
   },
