@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core'
+import { NgModule, ModuleWithProviders } from '@angular/core'
 import { CommonModule } from '@angular/common'
-import { IonicPageModule } from 'ionic-angular'
-import { Ng2SearchPipeModule, Ng2SearchPipe } from 'ng2-search-filter'
-import { NgPipesModule } from 'ngx-pipes'
+import { IonicModule } from 'ionic-angular'
+import { NgArrayPipesModule, FilterByPipe } from 'ngx-pipes'
 import { IonTempList } from './ion-temp-list'
 
 @NgModule({
@@ -10,16 +9,15 @@ import { IonTempList } from './ion-temp-list'
     IonTempList
   ],
   imports: [
+    NgArrayPipesModule,
     CommonModule,
-    Ng2SearchPipeModule,
-    NgPipesModule,
-    IonicPageModule.forChild(IonTempList)
+    IonicModule
   ],
   exports: [
     IonTempList
   ],
   providers: [
-    Ng2SearchPipe
+    FilterByPipe
   ]
 })
 export class IonTempListModule {}

@@ -1,6 +1,6 @@
 <ion-list *ngIf="items.length">
   <ng-content></ng-content>
-  <ng-template ngFor let-item [ngForOf]="items | filter:filter | orderBy:orderBy | slice:0:limit" [ngForTemplate]="template">
+  <ng-template ngFor let-item [ngForOf]="items | filterBy:filterKey:filter | orderBy:orderBy | slice:0:limit" [ngForTemplate]="template">
   </ng-template>
 </ion-list>
 
