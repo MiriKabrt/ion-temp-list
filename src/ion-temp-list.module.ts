@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { IonicModule } from 'ionic-angular'
 import { NgArrayPipesModule, FilterByPipe } from 'ngx-pipes'

@@ -1,9 +1,17 @@
 <ion-list *ngIf="items.length">
   <ng-content></ng-content>
-  <ng-template ngFor let-item [ngForOf]="items | filterBy:filterKey:filter | orderBy:orderBy | slice:0:limit" [ngForTemplate]="template">
+  <ng-template ngFor let-item [ngForOf]="items | filterBy:filterKeys:filter | orderBy:orderBy | slice:0:limitCount" [ngForTemplate]="template">
   </ng-template>
 </ion-list>
-
+<div *ngIf="!items.length && !loaded" text-center>
+  <br/>
+  <img src="assets/img/loading.gif" />
+</div>
+<ion-card *ngIf="!items.length && loaded" >
+  <ion-card-content text-center>
+    {{ noDataText }}
+  </ion-card-content>
+</ion-card>
 <ion-infinite-scroll *ngIf="showInfinitScroll()" (ionInfinite)="doInfinite($event)">
-   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  <ion-infinite-scroll-content></ion-infinite-scroll-content>
 </ion-infinite-scroll>
